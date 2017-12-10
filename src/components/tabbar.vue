@@ -35,7 +35,7 @@ export default {
   },
   data(){
     return{
-      selected:''
+      selected:0
     }
   },
   methods:{

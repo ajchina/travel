@@ -1,5 +1,5 @@
 <template>
-    <div class="tabbar-item" @click="clickItem">
+    <div class="tabbar-item" @click="clickItem(index)">
       <span v-show="!iconshow">
         <slot name="normalicon"></slot>
       </span>
@@ -14,8 +14,8 @@
 export default {
   props:['iconText','index','selected'],
   methods:{
-    clickItem(){
-      this.$emit('clickIndex',this.index);
+    clickItem(index){
+      this.$emit('clickIndex',index);
     }
   },
   computed: {

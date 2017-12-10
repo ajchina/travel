@@ -2,16 +2,16 @@
   <div class="con">
     <div class="item-box">
       <div class="left">
-        <img src="../assets/img/item-img0329_01.jpg" alt="">
-        <p>台湾环岛8日7晚跟团游。甩尾狂甩3人行1人免单</p>
+        <slot name="sellImg"></slot>
+        <p v-text="sellTitle"></p>
         <div class="price">
           <span>席位充足</span>
           <span>￥1999 <i>起</i></span>
         </div>
       </div>
       <div class="right">
-        <img src="../assets/img/item-img0329_02.jpg" alt="">
-        <p>巴厘岛7日5晚自由行。五星豪庭，三星价格特...</p>
+        <slot name="sellImg1"></slot>
+        <p v-text="sellTitle1"></p>
         <div class="price1">
           <span>席位充足</span>
           <span>￥2999 <i>起</i></span>
@@ -22,7 +22,9 @@
 </template>
 
 <script>
-
+export default {
+  props:['sellTitle','sellTitle1']
+}
 </script>
 
 <style>
@@ -115,8 +117,14 @@
     font-size: 16px;
 
   }
-  .price1 span:nth-of-type(2) > i{
+  .price1 span:nth-of-type(2) i{
     font-style: normal;
-
+    color: #959595;
+    font-size: 14px;
+  }
+  .price span:nth-of-type(2) > i {
+    font-style: normal;
+    color: #959595;
+    font-size: 14px;
   }
 </style>

@@ -105,7 +105,7 @@ export default {
   text-align: center;
   color: #fff;
   background-size:cover;
-  background:url("../assets/icon/btnlist0323_03.jpg") no-repeat 1px 0;
+  background:url("../assets/icon/success.png") no-repeat 1px 0;
 }
 .spans-success1{
   display: inline-block;
@@ -117,7 +117,7 @@ export default {
   text-align: center;
   color: #fff;
   background-size: cover;
-  background:url("../assets/icon/btnlist0323_14.jpg") no-repeat;
+  background:url("../assets/icon/success2.png") no-repeat;
 }
 .secImg1 .spans-success2 {
   display: inline-block;

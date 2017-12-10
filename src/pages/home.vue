@@ -21,9 +21,21 @@
     </sec>
     <second-banner></second-banner>
     <sell></sell>
-    <sell-item></sell-item>
-    <sell-item></sell-item>
-    <sell-item></sell-item>
+    <sell-item sellTitle="台湾环岛8日7晚跟团游。甩尾狂甩3人行1人免单"
+               sellTitle1="巴厘岛7日5晚自由行。五星豪庭，三星价格特...">
+      <img src="../assets/img/item-img0329_01.jpg" slot="sellImg">
+      <img src="../assets/img/item-img0329_02.jpg" slot="sellImg1">
+    </sell-item>
+    <sell-item sellTitle="韩国首尔5日4晚跟团游。暑假预售商圈五花，好..."
+               sellTitle1="马尔代夫6日自由行·6日4晚。全球顶级海岛蜜月...">
+      <img src="../assets/img/item-img0329_03.jpg" slot="sellImg">
+      <img src="../assets/img/item-img0329_04.jpg" slot="sellImg1">
+    </sell-item>
+    <sell-item sellTitle="香港5日自由行·仅含王法机票。星光大道+天王星"
+               sellTitle1="新加坡5日4晚自由行。错峰周末游，特赠送价值">
+      <img src="../assets/img/item-img0329_05.jpg" slot="sellImg">
+      <img src="../assets/img/item-img0329_06.jpg" slot="sellImg1">
+    </sell-item>
     <bot></bot>
   </div>
 </template>

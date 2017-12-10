@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>travel</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+  <script>
+    (function () {
+      var supportsOrientationChange = 'onorientationchange' in window ? 'orientationchange' : 'resize';
+      var clientWidth = document.documentElement.clientWidth;
+      var timer;
+      var nowPX = 0;
+      function setRem() {
+        clientWidth = document.documentElement.clientWidth;
+        if(clientWidth >= 768){
+          nowPX = 768 / 375 * 20;
+        }else{
+          nowPX = clientWidth / 375 * 20;
+        }
+        document.documentElement.style.fontSize = nowPX + 'px';
+      }
+      clientWidth !== 375 && setRem();
+      window.addEventListener(supportsOrientationChange, function () {
+        clearTimeout(timer);
+        timer = setTimeout(function () {
+          setRem();
+        }, 300);
+      }, false);
+    })();
+  </script>
+
+</html>
